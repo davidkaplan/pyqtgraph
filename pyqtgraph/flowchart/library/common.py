@@ -57,6 +57,9 @@ def generateUi(opts):
             w = QtGui.QComboBox()
             for i in o['values']:
                 w.addItem(i)
+        elif t == 'string':
+            w = QtGui.QLineEdit()
+            w.setText(o['value'])
         #elif t == 'colormap':
             #w = ColorMapper()
         elif t == 'color':
